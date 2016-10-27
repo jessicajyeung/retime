@@ -17,6 +17,12 @@ h1, h2, h3, .macro, #new{
   text-align: center;
 }
 
+ol {
+  text-align: center;
+  display: inline;
+  list-style-position: inside;
+}
+
 header .user{
   position: absolute;
   top: 0px;
