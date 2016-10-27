@@ -16,9 +16,6 @@ header{
 h1, h2, h3, .macro, #new{
   text-align: center;
   display: inline;
-}
-
-ol {
   list-style-position:inside;
 }
 
