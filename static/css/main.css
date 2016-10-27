@@ -5,21 +5,16 @@ body {
   height:100vh;
 }
 
+h1, h2, h3, .macro, #new{
+  display: inline;
+}
+
 header{ 
   position: relative; 
   top:0;
   width:100%; 
   height:60px; 
   line-height:60px;
-}
-
-h1, h2, h3, .macro, #new{
-  text-align: center;
-  display: inline;
-}
-
-ol {
-  list-style-position:inside;
 }
 
 ol {
