@@ -13,12 +13,12 @@ header{
   line-height:60px;
 }
 
-h1, h2, h3, .container, #new{
+h1, h2, h3, #new{
   text-align: center;
   display: inline;
 }
 
-.micro ol {
+ol {
   display: inline;
   list-style-position:inside;
 }
