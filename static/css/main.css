@@ -13,7 +13,7 @@ header{
   line-height:60px;
 }
 
-h1, h2, h3, #micro{
+h1, h2, h3, .macro, #new{
   text-align: center;
 }
 
@@ -72,4 +72,3 @@ header .user{
   margin-top:5px; 
   margin:0 auto;
 }
-
