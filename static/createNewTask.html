@@ -11,95 +11,95 @@
 	<link href="css/main.css" rel="stylesheet">
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
       <![endif]-->        
-</head>
+    </head>
 
-<body>
-  <div class="container">
-		<header>
-      <nav class="navbar navbar-default">
-        <button class="hamburger">&#9776;</button>
-        <button class="cross">&#735;</button>
-        <h2 class="center-text">Hi, username!</h2>
-        <a href="profile.html" class="user">
-          <img src="img/profile_icon.png" id="user" alt="Username's Profile" width="50px" height="50px" >
-        </a>
-      </nav>
-		</header>
+    <body>
+      <div class="container">
+        <header>
+          <nav class="navbar navbar-default">
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+            <h2 class="center-text">Hi, username!</h2>
+            <a href="profile.html" class="user">
+              <img src="img/profile_icon.png" id="user" alt="Username's Profile" width="50px" height="50px" >
+            </a>
+          </nav>
+        </header>
 
-		<div class="menu">
-			<ul>
-				<a href="index.html"><li>HOME</li></a>
-				<a href="profile.html"><li>PROFILE</li></a>
-				<a href="settings.html"><li>SETTINGS</li></a>
-				<a href="#"><li>LOG OUT</li></a>
-			</ul>
-		</div> 
-		
+        <div class="menu">
+         <ul>
+          <a href="index.html"><li>HOME</li></a>
+          <a href="profile.html"><li>PROFILE</li></a>
+          <a href="settings.html"><li>SETTINGS</li></a>
+          <a href="#"><li>LOG OUT</li></a>
+        </ul>
+      </div> 
+      
 
-    <h1 class="center-text">Re:Time</h1>
-		<h4 class="center-text">Create New Task</h4>
-    <div class="container">
-      <div class="col-sm-3">
-      </div>
-      <div class="col-sm-6">
-  		<form>
-        <div class="form-group">
-    		  <label for="taskname">Task Name: </label>
-          <input type="text" class="form-control" id="taskname" placeholder="Your task here">
+      <h1 class="center-text">Re:Time</h1>
+      <h4 class="center-text">Create New Task</h4>
+      <div class="container">
+        <div class="col-sm-3">
         </div>
+        <div class="col-sm-6">
+          <form>
+            <div class="form-group">
+              <label for="taskname">Task Name: </label>
+              <input type="text" class="form-control" id="taskname" placeholder="Your task here">
+            </div>
 
-    		<div class="form-group">
-          <label for="calendar">Due Date: </label>
-          <input type="text" class="form-control" id="calendar" placeholder="11/16/1995">
-    		</div>
+            <div class="form-group">
+              <label for="calendar">Due Date: </label>
+              <input type="text" class="form-control" id="calendar" placeholder="11/16/1995">
+            </div>
 
-        <div class="form-group">
-          <label for="timedue">Time Due: </label>
-          <input type="time" class="form-control" id="timedue">
+            <div class="form-group">
+              <label for="timedue">Time Due: </label>
+              <input type="time" class="form-control" id="timedue">
+            </div>
+
+            <div class="form-group">
+              <label for="select">Number of Subtasks:</label><br>
+              <select class="custom-select">
+                <option selected>1</option>
+                <option value="1">2</option>
+                <option value="2">3</option>
+                <option value="3">4</option>
+                <option value="4">5</option>
+                <option value="5">6</option>
+                <option value="6">7</option>
+                <option value="7">8</option>
+                <option value="8">9</option>
+                <option value="9">10</option>
+              </select>
+            </div>
+
+            <button type="button" class="btn btn-secondary">Create</button>
+            <button type="button" class="btn btn-secondary">Reset</button>
+            <a href="index.html">Cancel </a>
+          </form>
         </div>
-
-        <div class="form-group">
-          <label for="select">Number of Subtasks:</label><br>
-          <select class="custom-select">
-            <option selected>1</option>
-            <option value="1">2</option>
-            <option value="2">3</option>
-            <option value="3">4</option>
-            <option value="4">5</option>
-            <option value="5">6</option>
-            <option value="6">7</option>
-            <option value="7">8</option>
-            <option value="8">9</option>
-            <option value="9">10</option>
-          </select>
+        <div class="col-sm-3">
         </div>
-
-        <button type="button" class="btn btn-secondary">Create</button>
-        <button type="button" class="btn btn-secondary">Reset</button>
-        <a href="index.html">Cancel </a>
-      </form>
-      </div>
-      <div class="col-sm-3">
       </div>
     </div>
-  </div>
 
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/introHCI.js"></script>
-	<script src="js/main.js"></script>
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>   
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/introHCI.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>   
     $(function() {
       $( "#calendar" ).datepicker();   
     }); 
-  </script>
-</body>
-</html>
+    </script>
+  </body>
+  </html>

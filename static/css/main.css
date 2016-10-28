@@ -26,6 +26,23 @@ header .user{
   padding-right: 5px;
 }
 
+.profile{
+  width:100%;
+  height:auto;
+  padding:1%;
+  text-align: center;
+}
+
+.profile h3{
+  display: inline;
+}
+
+#finished_icon{
+ margin-left:2%;
+ height:40px;
+ width:40px; 
+}
+
 .hamburger, .cross {
   position: absolute;
   left: 5px;
