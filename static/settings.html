@@ -47,16 +47,22 @@
 		<p><center>Per Day</center></p> 
 		
 		<!-- create a fillable next to focus time to input -->
-		<h5><center>Focus Time: ____ MIN </center></h5> 
-
+		<form action="demo_form.asp" method="get">
+		<h5><center>Focus Time: <input type="text" name = "ftname"> Minutes <br>
+			<input type="submit" value="Submit"> </center></h5> 
+		</form> 
 
 		<!-- make all blanks fillable --> 
 		<h3><center>Update With Current Info</center></h3>
-		<p><center>Old Password:___________ </center></p>
-		<p><center>New Password:___________ </center></p>
-		<p><center>Reenter:___________ </center></p> 
-		<p><center>New Email:___________ </center></p> 
-
+		
+		<form action="demo_form.asp" method="get">
+		<center>Old Password: <input type="text" name = "opname"><br>
+		New Password: <input type="text" name = "npname"><br>
+		Re-enter: <input type="text" name = "rename"><br>
+		New Email: <input type="text" name = "ename"><br> 
+		<input type="submit" value="Submit"> </center>
+		</form>
+		
 		<!-- make into a button --> 
 		<h4><center> Delete Account </center></h4> 
 
