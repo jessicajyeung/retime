@@ -108,7 +108,7 @@ header .user{
 /* CSS FOR TOGGLE BUTTON ************************************/ 
 /* The switch - the box around the slider */
 .switch {
-  position: relative;
+  position: relative; 
   display: inline-block;
   width: 60px;
   height: 34px;
@@ -163,4 +163,17 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+/* NOTFICIATION ICON & COUNTER *********************/ 
+.icon {
+    width:30px; 
+    height:30px;
+    position: relative;
+}
+.txt{
+    background:red; 
+    font-size:xx-small;
+    position: absolute;
+    top: 5px;
+    left: 5px;
 }
