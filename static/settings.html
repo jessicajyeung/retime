@@ -36,23 +36,28 @@
 		</div>
 
 		</body>
-		<!-- how to create a space between settings and notifications? -->
-		<br> 
+		<br> <!-- creates space --> 
 		<h3><center>Notifications</center></h3>
 
  		<!-- create a toggle on/off switch next to it -->
 		<h4><center>Email</center></h4>
-
+<!-- ~~~~~~~~~~before toggle switch~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+		<!-- Rounded switch -->
+		<label class="switch">
+  			<input type="checkbox">
+  			<div class="slider round"></div>
+		</label> 
+<!--~~~~ after toggle switch ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 		<!-- create a ? button next to the minus and plus next to per day -->
 		<p><center>Per Day</center></p> 
 		
-		<!-- create a fillable next to focus time to input -->
+		<!-- creates a fillable form next to focus time -->
 		<form action="demo_form.asp" method="get">
 		<h5><center>Focus Time: <input type="text" name = "ftname"> Minutes <br>
 			<input type="submit" value="Submit"> </center></h5> 
 		</form> 
 
-		<!-- make all blanks fillable --> 
+		
 		<h3><center>Update With Current Info</center></h3>
 		
 		<form action="demo_form.asp" method="get">
@@ -63,8 +68,8 @@
 		<input type="submit" value="Submit"> </center>
 		</form>
 		
-		<!-- make into a button --> 
-		<h4><center> Delete Account </center></h4> 
+		
+		<h4><center><button type="button"> Delete Account </button></center></h4> 
 
 
 		</body> 
