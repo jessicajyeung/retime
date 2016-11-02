@@ -80,12 +80,13 @@
               </select>
             </div>
 
+	    <div id="sub_tasks">
+	    </div>
+		  
             <button type="button" class="btn btn-secondary">Create</button>
             <button type="button" class="btn btn-secondary">Reset</button>
             <a href="index.html">Cancel </a>
           </form>
-	  <div id="sub_tasks">
-	  </div>
         </div>
         <div class="col-sm-3">
         </div>
@@ -102,13 +103,16 @@
     $(function() {
       $( "#calendar" ).datepicker();   
 	    
-      $("#number_tasks_select").on("change", function () {
+      display_subtasks = function () {
 	console.log("selected value has value: " + $("#number_tasks_select").val());
 	      
 	$('#sub_tasks').html("");
 	for (i = 0; i < $("#number_tasks_select").val(); i += 1)
 	  $('#sub_tasks').append('<input type="text" class="form-control" id="taskname" placeholder="Your subtask here">');
-      });
+      }
+	    
+      $("#number_tasks_select").on("change", display_subtasks);
+      display_subtasks();
     }); 
     </script>
   </body>
