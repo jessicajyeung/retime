@@ -48,7 +48,7 @@
         <div class="col-sm-3">
         </div>
         <div class="col-sm-6">
-          <form>
+          <form id="main_create_form">
             <div class="form-group">
               <label for="taskname">Task Name: </label>
               <input type="text" class="form-control" id="taskname" placeholder="Your task here">
@@ -66,7 +66,7 @@
 
             <div class="form-group">
               <label for="select">Number of Subtasks:</label><br>
-              <select class="custom-select">
+              <select id="number_tasks_select" class="custom-select">
                 <option selected>1</option>
                 <option value="1">2</option>
                 <option value="2">3</option>
@@ -84,6 +84,8 @@
             <button type="button" class="btn btn-secondary">Reset</button>
             <a href="index.html">Cancel </a>
           </form>
+	  <div id="sub_tasks">
+	  </div>
         </div>
         <div class="col-sm-3">
         </div>
@@ -99,6 +101,14 @@
     <script>   
     $(function() {
       $( "#calendar" ).datepicker();   
+	    
+      $("#number_tasks_select").on("change", function () {
+	console.log("selected value has value: " + $("#number_tasks_select").val());
+	      
+	$('#sub_tasks').text("");
+	for (i = 0; i < $("#number_tasks_select").val(); i += 1)
+	  $('#sub_tasks').append($("#main_create_form").text());
+      });
     }); 
     </script>
   </body>
