@@ -59,7 +59,7 @@
               <input type="text" class="form-control" id="calendar" placeholder="11/16/1995">
             </div>
 
-            <div class="form-group">
+            <div class="time_due_field form-group">
               <label for="timedue">Time Due: </label>
               <input type="time" class="form-control" id="timedue">
             </div>
@@ -105,9 +105,10 @@
       $("#number_tasks_select").on("change", function () {
 	console.log("selected value has value: " + $("#number_tasks_select").val());
 	      
-	$('#sub_tasks').text("");
+	$('#sub_tasks').html("");
 	for (i = 0; i < $("#number_tasks_select").val(); i += 1)
-	  $('#sub_tasks').append($("#main_create_form").text());
+	  $('#sub_tasks').append($("#main_create_form").html());
+	$('#sub_tasks .time_due_field').remove();
       });
     }); 
     </script>
