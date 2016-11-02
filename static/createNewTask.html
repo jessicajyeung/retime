@@ -51,7 +51,7 @@
           <form id="main_create_form">
             <div class="form-group">
               <label for="taskname">Task Name: </label>
-              <input type="text" class="form-control" id="taskname" placeholder="Your task here">
+              <input id='task_name_input' type="text" class="form-control" id="taskname" placeholder="Your task here">
             </div>
 
             <div class="form-group">
@@ -107,8 +107,7 @@
 	      
 	$('#sub_tasks').html("");
 	for (i = 0; i < $("#number_tasks_select").val(); i += 1)
-	  $('#sub_tasks').append($("#main_create_form").html());
-	$('#sub_tasks .time_due_field').remove();
+	  $('#sub_tasks').append($('#task_name_input').html());
       });
     }); 
     </script>
