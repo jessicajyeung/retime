@@ -8,6 +8,11 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
+var home = require('./routes/home');
+var createNewTask = require('./routes/createNewTask');
+var profile = require('./routes/profile');
+var task = require('./routes/task');
+var settings = require('./routes/settings');
 // Example route
 // var user = require('./routes/user');
 
@@ -35,15 +40,16 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
-app.get('/', home.view);
-app.get('/', createNewTask.view);
-app.get('/', task.view);
-app.get('/', profile.view);
-app.get('/', settings.view);
+app.get('/home', home.view);
+app.get('/createNewTask', createNewTask.view);
+app.get('/task', task.view);
+app.get('/profile', profile.view);
+app.get('/settings', settings.view);
 
 // Example route
 // app.get('/users', user.list);
 
+app.use(express.static('public/'));
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });

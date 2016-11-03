@@ -1,7 +1,7 @@
 // Get all of our user data
-var data = require('../data.json');
+//var loginData = require('../loginData.json');
 
 exports.view = function(req, res){
-	console.log(data);
+	//console.log(loginData);
 	res.render('index');
 };

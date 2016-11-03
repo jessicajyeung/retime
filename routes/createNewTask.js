@@ -1,7 +1,7 @@
 // Get all of our user data
-var data = require('../data.json');
+//var newTaskData = require('../newTaskData.json');
 
 exports.view = function(req, res){
-	console.log(data);
-	res.render('index');
+	//console.log(newTaskData);
+	res.render('createNewTask');
 };
