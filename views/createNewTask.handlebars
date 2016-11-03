@@ -34,10 +34,10 @@
 
         <div class="menu">
          <ul>
-          <a href="home.html"><li>HOME</li></a>
-          <a href="profile.html"><li>PROFILE</li></a>
-          <a href="settings.html"><li>SETTINGS</li></a>
-          <a href="views/index.handlebars"><li>LOG OUT</li></a>
+          <a href="home"><li>HOME</li></a>
+          <a href="profile"><li>PROFILE</li></a>
+          <a href="settings"><li>SETTINGS</li></a>
+          <a href="/"><li>LOG OUT</li></a>
         </ul>
       </div> 
       
@@ -80,9 +80,9 @@
               </select>
             </div>
 
-	    <div class="form-group" id="sub_tasks">
-	    </div>
-		  
+            <div class="form-group" id="sub_tasks">
+            </div>
+
             <button type="button" class="btn btn-secondary">Create</button>
             <button type="button" class="btn btn-secondary">Reset</button>
             <a href="home.html">Cancel </a>
@@ -102,18 +102,18 @@
     <script>   
     $(function() {
       $( "#calendar" ).datepicker();   
-	    
+
       display_subtasks = function () {
-	console.log("selected value has value: " + $("#number_tasks_select").val());
-	      
-	$('#sub_tasks').html("");
-	for (i = 0; i < $("#number_tasks_select").val(); i += 1)
-	  $('#sub_tasks').append('<input type="text" class="form-control" id="taskname" placeholder="Your subtask here">');
-      }
-	    
-      $("#number_tasks_select").on("change", display_subtasks);
-      display_subtasks();
-    }); 
+       console.log("selected value has value: " + $("#number_tasks_select").val());
+
+       $('#sub_tasks').html("");
+       for (i = 0; i < $("#number_tasks_select").val(); i += 1)
+         $('#sub_tasks').append('<input type="text" class="form-control" id="taskname" placeholder="Your subtask here">');
+     }
+
+     $("#number_tasks_select").on("change", display_subtasks);
+     display_subtasks();
+   }); 
     </script>
   </body>
   </html>
