@@ -2,32 +2,36 @@
 	"users": [
 		{
 			"name": "Dexter",
-			"assignment[n]": "#",
+			"assignments": [
+				{"task": "#1", "subtasks": ["Omelette", "du fromage"]},
+				{"task": "#2", "subtasks": ["Anti-Deedee Spray", "set up traps"]},
+				{"task": "#3", "subtasks": ["Be cool", "don't snooze!"]}
+			],
 			"imageURL": "https://pixabay.com/static/uploads/photo/2016/08/23/22/03/default-1615654_960_720.png"			
 		},
 		{
 			"name": "DeeDee",
-			"assignment[n]": "#",
+			"assignment": "1",
 			"imageURL": "https://pixabay.com/static/uploads/photo/2016/03/31/21/31/animal-1296469_960_720.png"			
 		},
 		{
 			"name": "Jimmy Neutron",
-			"assignment[n]": "#",
+			"assignment": "1",
 			"imageURL": "https://pixabay.com/static/uploads/photo/2016/03/31/21/27/circles-1296429_960_720.png"			
 		},
 		{
 			"name": "Johnny Bravo",
-			"assignment[n]": "#",
+			"assignment": "1",
 			"imageURL": "https://pixabay.com/static/uploads/photo/2016/09/22/16/26/grid-1687662_960_720.png"			
 		},
 		{
 			"name": "Timmy Turner",
-			"assignment[n]": "#",
+			"assignment": "1",
 			"imageURL": "https://pixabay.com/static/uploads/photo/2015/05/08/10/13/red-757851_960_720.png"
 		},
 		{
 			"name": "Danny Phantom",
-			"assignment[n]": "#",
+			"assignment": "1",
 			"imageURL": "https://pixabay.com/static/uploads/photo/2016/05/23/08/02/geometric-1409859_960_720.jpg"
 		}
 	]

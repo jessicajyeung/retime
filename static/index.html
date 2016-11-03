@@ -36,11 +36,15 @@
 		<div class="container center-text homescreen">
 			<h1>Re:Time</h1>
 			<h2>Due in ... days</h2>
-			<h3><a href="task.html">Assignment</a></h3>
+			{{#with users.[0]}}
+			<h3><a href="task.html">{{task}}</a></h3>
 			<ol>
-				<li>Subtask</li>
-				<li>Subtask</li>
+				{{#each subtask}}
+				<li>{{subtask.[0]}}</li>
+				<li>{{subtask.[1]}}</li>
+				{{/each}}
 			</ol>
+			{{/with}}
 		</div>
 		
 		<div id="new">
