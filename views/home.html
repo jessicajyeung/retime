@@ -35,7 +35,8 @@
 		</div> 
 		<div class="container center-text homescreen">
 			<h1>Re:Time</h1>
-			<h2>Due in ... days</h2>
+			<div id="countdown">
+				<h2>Due in <span id="coundown_days"></span> days</h2>
 			{{#with users.[0]}}
 			<h3><a href="task.html">{{task}}</a></h3>
 			<ol>
@@ -59,6 +60,19 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/introHCI.js"></script>
 	<script src="js/main.js"></script>
-	
+		
+	<script>
+		$(function() {
+		    setInteval(function() {
+			task_date = "2016-11-15";
+				
+			date = Date.parse(task_date);
+			today = new Date();
+			diff = date - today;
+				
+			days = parseInt(diff/24*3600*1000));
+			$('#countdown_days').text(days);}, 1000*60*60);
+			 });
+	</script>
 </body>
 </html>
