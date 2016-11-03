@@ -64,7 +64,7 @@
 		
 		<script>
 		$(function() {
-			setInteval(function() {
+			setInterval(function() {
 				task_date = "2016-11-15";
 				
 				date = Date.parse(task_date);
@@ -73,7 +73,7 @@
 				
 				days = parseInt(diff/24*3600*1000));
 			$('#countdown_days').text(days);}, 1000*60*60);
-	});
-</script>
+			});
+		</script>
 </body>
 </html>
