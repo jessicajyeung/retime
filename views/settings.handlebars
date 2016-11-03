@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Re:Time</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/introHCI.css" rel="stylesheet">   
+	<link href="css/main.css" rel="stylesheet">  
+</head>
+
+<body>
+	<div class="container">
+
+		<header>
+			<h1><center>Re:Time</center></h1>
+			<button class="hamburger">&#9776;</button>
+			<button class="cross">&#735;</button>
+			<a href="profile.html" class="user">
+				<img src="img/profile_icon.png" id="user" alt="Username's Profile" width="35px" height="35px" >
+			</a>		
+		</header>
+
+			<div class="menu">
+				<ul>
+					<a href="home.html"><li>HOME</li></a>
+					<a href="profile.html"><li>PROFILE</li></a>
+					<a href="settings.html"><li>SETTINGS</li></a>
+					<a href="views/index.handlebars"><li>LOG OUT</li></a>
+				</ul>
+			</div> 
+
+			<h2><center>Settings</center></h2>
+		</div>
+
+		
+		<br> <!-- creates space --> 
+		<h3><center>Notifications</center></h3>
+
+ 		<!-- create a toggle on/off switch next to it -->
+		<h4><center>Email</center></h4>
+<!-- ~~~~~~~~~~before toggle switch~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+		<!-- Rounded switch -->
+		<center><label class="switch">
+  			<input type="checkbox">
+  			<div class="slider round"></div>
+		</label> </center>
+<!--~~~~ after toggle switch ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- create a ? button next to the minus and plus next to per day -->
+		<p><center>Per Day</center></p> 
+		
+		<!-- creates a fillable form next to focus time -->
+		<form action="demo_form.asp" method="get">
+		<h5><center>Focus Time: <input type="text" name = "ftname"> Minutes <br>
+			<input type="submit" value="Submit"> </center></h5> 
+		</form> 
+
+		
+		<h3><center>Update With Current Info</center></h3>
+		
+		<form action="demo_form.asp" method="get">
+		<center>Old Password: <input type="text" name = "opname"><br>
+		New Password: <input type="text" name = "npname"><br>
+		Re-enter: <input type="text" name = "rename"><br>
+		New Email: <input type="text" name = "ename"><br> 
+		<input type="submit" value="Submit"> </center>
+		</form>
+		
+		
+		<h5><center><button type="button"> Delete Account </button></center></h5> 
+
+
+		</body> 
+
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/introHCI.js"></script>
+		<script src="js/main.js"></script>
+
+	</body>
+	</html>

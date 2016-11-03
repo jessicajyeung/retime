@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Re:Time</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/introHCI.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+
+		<header>
+			<nav class="navbar navbar-default">
+				<button class="hamburger">&#9776;</button>
+				<button class="cross">&#735;</button>
+				<h2 class="center-text">Hi, username!</h2>
+				<a href="profile.html" class="user">
+					<img src="img/profile_icon.png" id="user" alt="Username's Profile" width="35px" height="35px" >
+				</a>
+			</nav>
+		</header>
+
+		<div class="menu">
+			<ul>
+				<a href="home.html"><li>HOME</li></a>
+				<a href="profile.html"><li>PROFILE</li></a>
+				<a href="settings.html"><li>SETTINGS</li></a>
+				<a href="views/index.handlebars"><li>LOG OUT</li></a>
+			</ul>
+		</div> 
+		<div class="container center-text homescreen">
+			<h1>Re:Time</h1>
+			<h2>Due in ... days</h2>
+			{{#with users.[0]}}
+			<h3><a href="task.html">{{task}}</a></h3>
+			<ol>
+				{{#each subtask}}
+				<li>{{subtask.[0]}}</li>
+				<li>{{subtask.[1]}}</li>
+				{{/each}}
+			</ol>
+			{{/with}}
+		</div>
+		
+		<div id="new">
+			<center>
+				<a href="createNewTask.html"><img src="img/add_icon.png" width="50" height="50"></a>
+				<p class="center-text">Add a task</p>
+			</center>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/introHCI.js"></script>
+	<script src="js/main.js"></script>
+	
+</body>
+</html>

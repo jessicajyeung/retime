@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Re:Time</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/introHCI.css" rel="stylesheet">   
+	<link href="css/main.css" rel="stylesheet">  
+</head>
+
+<body>
+	<div class="container">
+
+		<header>
+			<h1><center>Re:Time</center></h1>
+			<button class="hamburger">&#9776;</button>
+			<button class="cross">&#735;</button>
+			<a href="profile.html" class="user">
+				<img src="img/profile_icon.png" id="user" alt="Username's Profile" width="35px" height="35px" >
+			</a>
+		</header>
+
+		<div class="menu">
+			<ul>
+				<a href="home.html"><li>HOME</li></a>
+				<a href="profile.html"><li>PROFILE</li></a>
+				<a href="settings.html"><li>SETTINGS</li></a>
+				<a href="views/index.handlebars"><li>LOG OUT</li></a>
+			</ul>
+		</div> 
+
+		<div class="macro">
+			<h2><center>Assignment</center></h2>
+			
+			<div>
+				<center><img src="img/loader.gif" alt="progress bar" width="250px" height="200px"></center>
+			</div>
+
+			<div class="micro">
+				<h3><center>Unfinished</center></h3>
+				<ol id="unfinished">
+					<li>Subtask</li>
+					<li>Subtask</li>
+					<li>Subtask</li>
+					<li>Subtask</li>
+					<li>Subtask</li>
+					<li>Subtask</li>
+				</ol>
+				<br>
+				<h3><center>Finished<center></h3>
+				<ol id="finished">
+					<li>Subtask</li>
+					<li>Subtask</li>
+					<li>Subtask</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/introHCI.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
