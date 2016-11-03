@@ -11,12 +11,17 @@
 		},
 		{
 			"name": "DeeDee",
-			"assignment": "1",
+			"assignment": [
+				{"task": "#1", "subtasks": ["collect toys", "give a toy"]},
+			],
 			"imageURL": "https://pixabay.com/static/uploads/photo/2016/03/31/21/31/animal-1296469_960_720.png"			
 		},
 		{
 			"name": "Jimmy Neutron",
-			"assignment": "1",
+			"assignment": [
+				{"task": "#1", "subtasks": ["fly", "land"]},
+				{"task": "#2", "subtasks": ["combustion", "exhaustion"]},
+			],
 			"imageURL": "https://pixabay.com/static/uploads/photo/2016/03/31/21/27/circles-1296429_960_720.png"			
 		},
 		{
