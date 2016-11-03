@@ -51,7 +51,7 @@
 
 			<div id="new">
 				<center>
-					<a href="createNewTask"><img src="img/add_icon.png" width="50" height="50"></a>
+					<a href="createNewTask.html"><img src="img/add_icon.png" width="50" height="50"></a>
 					<p class="center-text">Add a task</p>
 				</center>
 			</div>
@@ -70,11 +70,9 @@
 				date = Date.parse(task_date);
 				today = new Date();
 				diff = date - today;
-				
-				days = parseInt(diff/24*3600*1000));
-			$('#countdown_days').text(days);}, 1000*60*60);
+			   days = parseInt(diff/(24*3600*1000));
+			$('#countdown_days').text(days);}, 1000);
 			});
 		</script>
 </body>
 </html>
-
