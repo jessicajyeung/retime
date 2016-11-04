@@ -69,16 +69,19 @@
 				</ol> -->
 				<div id="table" class="table-editable">
 					<span class="table-add glyphicon glyphicon-plus"></span>
+					{{#with users.[0]}}
+				{{#each assignments}}
 					<table class="table">
 						<tr>
 <!-- 							<th>Name</th> -->
-							<th>Value</th>
+							<th>{{task}}</th>
 							<th></th>
 							<th></th>
 						</tr>
 						<tr>
+							{{#each subtasks    }}
 <!-- 							<td contenteditable="true">Stir Fry</td>
- -->							<td contenteditable="true">stir-fry</td>
+ -->							<td contenteditable="true">{{smalltask}}</td>
 							<td>
 								<span class="table-remove glyphicon glyphicon-remove"></span>
 							</td>
@@ -89,7 +92,7 @@
 						</tr>
 						<!-- This is our clonable table line -->
 						<tr class="hide">
-							<td contenteditable="true">Untitled</td>
+							<td contenteditable="true">{{smalltask}}</td>
 <!-- 							<td contenteditable="true">undefined</td>
  -->							<td>
 								<span class="table-remove glyphicon glyphicon-remove"></span>
@@ -97,9 +100,12 @@
 							<td>
 								<span class="table-up glyphicon glyphicon-arrow-up"></span>
 								<span class="table-down glyphicon glyphicon-arrow-down"></span>
+								{{/each}}
 							</td>
 						</tr>
 					</table>
+					{{/each}}
+				{{/with}}
 				</div>
 
 				<button id="submitchange-btn" class="btn btn-primary">Submit Change</button>
