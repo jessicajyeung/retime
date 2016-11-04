@@ -3,41 +3,60 @@
 		{
 			"name": "Dexter",
 			"assignments": [
-				{"task": "#1", "subtasks": ["Omelette", "du fromage"]},
-				{"task": "#2", "subtasks": ["Anti-Deedee Spray", "set up traps"]},
-				{"task": "#3", "subtasks": ["Be cool", "don't snooze!"]}
-			],
-			"imageURL": "https://pixabay.com/static/uploads/photo/2016/08/23/22/03/default-1615654_960_720.png"			
+				{
+					"task": "#1", 
+					"subtasks": [
+						{"smalltask": "Omelette"}, 
+						{"smalltask": "du fromage"},
+						{"smalltask": "Au Revoir!"}
+					]
+				},
+				{	"task": "#2", 
+					 "subtasks": [
+						 {"smalltask": "Anti-Deedee Spray"},
+						 {"smalltask": "set up traps"}
+						 ]
+				},		 
+				{	"task": "#3", 
+					"subtasks": [
+						{"smalltask": "Be cool"}, 
+						{"smalltask": "don't snooze!"}
+					]
+				}
+			]
 		},
+
 		{
 			"name": "DeeDee",
 			"assignment": [
-				{"task": "#1", "subtasks": ["collect toys", "give a toy"]},
-			],
-			"imageURL": "https://pixabay.com/static/uploads/photo/2016/03/31/21/31/animal-1296469_960_720.png"			
+				{
+					"task": "#1", 
+					"subtasks": [
+						{"smalltask": "collect toys"}, 
+						{"smalltask": "give a toy"}
+					]
+				}
+			]	
 		},
+
 		{
 			"name": "Jimmy Neutron",
 			"assignment": [
-				{"task": "#1", "subtasks": ["fly", "land"]},
-				{"task": "#2", "subtasks": ["combustion", "exhaustion"]},
-			],
-			"imageURL": "https://pixabay.com/static/uploads/photo/2016/03/31/21/27/circles-1296429_960_720.png"			
-		},
-		{
-			"name": "Johnny Bravo",
-			"assignment": "1",
-			"imageURL": "https://pixabay.com/static/uploads/photo/2016/09/22/16/26/grid-1687662_960_720.png"			
-		},
-		{
-			"name": "Timmy Turner",
-			"assignment": "1",
-			"imageURL": "https://pixabay.com/static/uploads/photo/2015/05/08/10/13/red-757851_960_720.png"
-		},
-		{
-			"name": "Danny Phantom",
-			"assignment": "1",
-			"imageURL": "https://pixabay.com/static/uploads/photo/2016/05/23/08/02/geometric-1409859_960_720.jpg"
+				{
+					"task": "#1",
+					"subtasks": [
+						{"smalltask":"fly"}, 
+						{"smalltask":"land"}
+					]
+				},
+				{
+					"task": "#2", 
+					"subtasks": [
+						{"smalltask": "combustion"},
+						{"smalltask":"exhaustion"}
+					]
+				}
+			]
 		}
 	]
 }

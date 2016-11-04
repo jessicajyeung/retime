@@ -39,13 +39,14 @@
 			<div id="countdown">
 				<h2>Due in <span id="countdown_days"></span> days</h2>
 				{{#with users.[0]}}
+				{{#each assignments}}
 				<h3><a href="task.html">{{task}}</a></h3>
-				<ol>
-					{{#each subtask}}
-					<li>{{subtask.[0]}}</li>
-					<li>{{subtask.[1]}}</li>
+				<ul>
+					{{#each subtasks	}}
+					<li>{{smalltask}}</li>
 					{{/each}}
-				</ol>
+				</ul>
+				{{/each}}
 				{{/with}}
 			</div>
 

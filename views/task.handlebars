@@ -35,13 +35,21 @@
 		<div class="macro">
 			<h2><center>Assignment</center></h2>
 			
-			<div>
+<!-- 			<div>
 				<center><img src="img/loader.gif" alt="progress bar" width="250px" height="200px"></center>
+			</div> -->
+			<div class="pie-wrapper progress-75 style-2">
+				<span class="label">75<span class="smaller">%</span></span>
+				<div class="pie">
+					<div class="left-side half-circle"></div>
+					<div class="right-side half-circle"></div>
+				</div>
+				<div class="shadow"></div>
 			</div>
 			<!-- how to update wedpags with new data -->
 			<!-- how to use one task page to rep assignments when called --> 
 			<div class="micro">
-				<h3><center>Unfinished</center></h3>
+<!-- 				<h3><center>Unfinished</center></h3>
 				<ol id="unfinished">
 					<li>Subtask</li>
 					<li>Subtask</li>
@@ -56,14 +64,52 @@
 					<li>Subtask</li>
 					<li>Subtask</li>
 					<li>Subtask</li>
-				</ol>
+				</ol> -->
+				<div id="table" class="table-editable">
+					<span class="table-add glyphicon glyphicon-plus"></span>
+					<table class="table">
+						<tr>
+							<th>Name</th>
+							<th>Value</th>
+							<th></th>
+							<th></th>
+						</tr>
+						<tr>
+							<td contenteditable="true">Stir Fry</td>
+							<td contenteditable="true">stir-fry</td>
+							<td>
+								<span class="table-remove glyphicon glyphicon-remove"></span>
+							</td>
+							<td>
+								<span class="table-up glyphicon glyphicon-arrow-up"></span>
+								<span class="table-down glyphicon glyphicon-arrow-down"></span>
+							</td>
+						</tr>
+						<!-- This is our clonable table line -->
+						<tr class="hide">
+							<td contenteditable="true">Untitled</td>
+							<td contenteditable="true">undefined</td>
+							<td>
+								<span class="table-remove glyphicon glyphicon-remove"></span>
+							</td>
+							<td>
+								<span class="table-up glyphicon glyphicon-arrow-up"></span>
+								<span class="table-down glyphicon glyphicon-arrow-down"></span>
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<button id="export-btn" class="btn btn-primary">Export Data</button>
+				<p id="export"></p>
 			</div>
 		</div>
 	</div>
+</div>
 
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/introHCI.js"></script>
-	<script src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/introHCI.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

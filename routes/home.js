@@ -3,5 +3,5 @@ var data = require('../data.json');
 
 exports.view = function(req, res){
 	//console.log(data);
-	res.render('home');
+	res.render('home', data);
 };
