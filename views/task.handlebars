@@ -33,7 +33,9 @@
 		</div> 
 
 		<div class="macro">
-			<h2><center>Assignment</center></h2>
+			{{#with users.[0]}}
+				{{#each assignments}}
+			<h2><center>{{task}}</center></h2>
 			
 <!-- 			<div>
 				<center><img src="img/loader.gif" alt="progress bar" width="250px" height="200px"></center>
@@ -69,8 +71,6 @@
 				</ol> -->
 				<div id="table" class="table-editable">
 					<span class="table-add glyphicon glyphicon-plus"></span>
-					{{#with users.[0]}}
-				{{#each assignments}}
 					<table class="table">
 						<tr>
 <!-- 							<th>Name</th> -->
