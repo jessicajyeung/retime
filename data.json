@@ -4,23 +4,26 @@
 			"name": "Dexter",
 			"assignments": [
 				{
-					"task": "#1", 
+					"task": "C'est la vie",
+					"due_date": "2016-11-15",
 					"subtasks": [
 						{"smalltask": "Omelette"}, 
 						{"smalltask": "du fromage"},
 						{"smalltask": "Au Revoir!"}
 					]
 				},
-				{	"task": "#2", 
+				{	"task": "Math Assignment", 
+					"due_date": "2016-11-17",
 					 "subtasks": [
-						 {"smalltask": "Anti-Deedee Spray"},
-						 {"smalltask": "set up traps"}
+						 {"smalltask": "Section1.1"},
+						 {"smalltask": "Section1.3"}
 						 ]
 				},		 
-				{	"task": "#3", 
+				{	"task": "Cogs170", 
+					"due_date": "2016-11-18",
 					"subtasks": [
-						{"smalltask": "Be cool"}, 
-						{"smalltask": "don't snooze!"}
+						{"smalltask": "Write HTML"}, 
+						{"smalltask": "Link to Json"}
 					]
 				}
 			]
@@ -31,6 +34,7 @@
 			"assignment": [
 				{
 					"task": "#1", 
+					"due_date": "2016-11-15",
 					"subtasks": [
 						{"smalltask": "collect toys"}, 
 						{"smalltask": "give a toy"}
@@ -44,6 +48,7 @@
 			"assignment": [
 				{
 					"task": "#1",
+					"due_date": "2016-11-15",
 					"subtasks": [
 						{"smalltask":"fly"}, 
 						{"smalltask":"land"}
@@ -51,6 +56,7 @@
 				},
 				{
 					"task": "#2", 
+					"due_date": "2016-11-15",
 					"subtasks": [
 						{"smalltask": "combustion"},
 						{"smalltask":"exhaustion"}
