@@ -34,18 +34,22 @@
 				<a href="/"><li>LOG OUT</li></a>
 			</ul>
 		</div> 
-		<div class="container center-text homescreen">
-			<h1>Re:Time</h1>
-			<div id="countdown">
-				<h2>Due in <span id="countdown_days"></span> days</h2>
+		<div class="container homescreen">
+			<h1 class="center-text">Re:Time</h1>
+			<div>
 				{{#with users.[0]}}
 				{{#each assignments}}
-				<h3><a href="task.html">{{task}}</a></h3>
-				<ul>
-					{{#each subtasks	}}
-					<li>{{smalltask}}</li>
-					{{/each}}
-				</ul>
+				<div class="row task_info" data-duedate={{due_date}}>
+					<div class="col-sm-4 col-sm-offset-4" style="font-size: 1.5em;"><a href="task">{{task}}</a></div>
+					<div class="col-sm-3 col-sm-offset-1">Due in <span class="countdown_days"></span> days</div>
+				</div>
+				<div class="row">
+					<ul class="col-sm-4 col-sm-offset-4">
+						{{#each subtasks	}}
+						<li style="margin-left: 20px;">{{smalltask}}</li>
+						{{/each}}
+					</ul>
+				</div>
 				{{/each}}
 				{{/with}}
 			</div>
@@ -66,14 +70,18 @@
 		<script>
 		$(function() {
 			setInterval(function() {
-				task_date = "2016-11-15";
-				
-				date = Date.parse(task_date);
-				today = new Date();
-				diff = date - today;
-			   days = parseInt(diff/(24*3600*1000));
-			$('#countdown_days').text(days);}, 1000);
-			});
+				$('.task_info').each(function (i, obj) {
+					task_date = $(this).data('duedate');
+
+					date = Date.parse(task_date);
+					today = new Date();
+					diff = date - today;
+				    days = parseInt(diff/(24*3600*1000));	
+					
+					$(this).find('.countdown_days').text(days);
+				})
+			}, 1000);
+		});
 		</script>
 </body>
 </html>
