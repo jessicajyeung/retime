@@ -18,7 +18,7 @@
 			<h1><center>Re:Time</center></h1>
 			<button class="hamburger">&#9776;</button>
 			<button class="cross">&#735;</button>
-			<a href="profile" class="user">
+			<a href="profile.html" class="user">
 				<img src="img/profile_icon.png" id="user" alt="Username's Profile" width="35px" height="35px" >
 			</a>
 		</header>
@@ -41,8 +41,8 @@
 				<center><img src="img/loader.gif" alt="progress bar" width="250px" height="200px"></center>
 			</div> -->
 			<div class="set-size charts-container">
-				<div class="pie-wrapper progress-75 style-2">
-					<span class="label">75<span class="smaller">%</span></span>
+				<div id="percentage_pie" class="pie-wrapper style-2">
+					<span class="label" style="color: black"><span id="percentage_value">75</span><span class="smaller">%</span></span>
 					<div class="pie">
 						<div class="left-side half-circle"></div>
 						<div class="right-side half-circle"></div>
@@ -73,15 +73,15 @@
 					<span class="table-add glyphicon glyphicon-plus"></span>
 					<table class="table">
 						<tr>
-<!-- 							<th>Name</th> -->
-							<th>{{task}}</th>
+							<th>Name</th>
+							<th>Value</th>
+							<th></th>
 							<th></th>
 							<th></th>
 						</tr>
-						<tr>
-							{{#each subtasks    }}
-<!-- 							<td contenteditable="true">Stir Fry</td>
- -->							<td contenteditable="true">{{smalltask}}</td>
+						<tr class="task">
+							<td contenteditable="true">Stir Fry</td>
+							<td contenteditable="true">stir-fry</td>
 							<td>
 								<span class="table-remove glyphicon glyphicon-remove"></span>
 							</td>
@@ -89,27 +89,29 @@
 								<span class="table-up glyphicon glyphicon-arrow-up"></span>
 								<span class="table-down glyphicon glyphicon-arrow-down"></span>
 							</td>
-						</tr>
+							<td>
+								<span style="color: red" class="mark_as_done glyphicon glyphicon-ok"></span>
+							</td>						</tr>
 						<!-- This is our clonable table line -->
-						<tr class="hide">
-							<td contenteditable="true">{{smalltask}}</td>
-<!-- 							<td contenteditable="true">undefined</td>
- -->							<td>
+						<tr class="hide task">
+							<td contenteditable="true">Untitled</td>
+							<td contenteditable="true">undefined</td>
+							<td>
 								<span class="table-remove glyphicon glyphicon-remove"></span>
 							</td>
 							<td>
 								<span class="table-up glyphicon glyphicon-arrow-up"></span>
 								<span class="table-down glyphicon glyphicon-arrow-down"></span>
-								{{/each}}
+							</td>
+							<td>
+								<span style="color: red" class="mark_as_done glyphicon glyphicon-ok"></span>
 							</td>
 						</tr>
 					</table>
-					{{/each}}
-				{{/with}}
 				</div>
 
-				<button id="submitchange-btn" class="btn btn-primary">Submit Change</button>
-				<p id="updateTask"></p>
+				<button id="export-btn" class="btn btn-primary">Export Data</button>
+				<p id="export"></p>
 			</div>
 		</div>
 	</div>
