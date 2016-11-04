@@ -13,6 +13,7 @@ var createNewTask = require('./routes/createNewTask');
 var profile = require('./routes/profile');
 var task = require('./routes/task');
 var settings = require('./routes/settings');
+var signup = require('./routes/signup');
 // Example route
 // var user = require('./routes/user');
 
@@ -45,6 +46,7 @@ app.get('/createNewTask', createNewTask.view);
 app.get('/task', task.view);
 app.get('/profile', profile.view);
 app.get('/settings', settings.view);
+app.get('/signup', signup.view);
 
 // Example route
 // app.get('/users', user.list);

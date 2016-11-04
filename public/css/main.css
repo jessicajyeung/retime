@@ -62,6 +62,10 @@ header .user{
   z-index:10000000000000;
 }
 
+.button-text {
+  color: white;
+}
+
 .cross{
   background:none;
   top:0px;
