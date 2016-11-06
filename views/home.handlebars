@@ -41,10 +41,13 @@
 				{{#each assignments}}
 				<div class="row task_info" data-duedate={{due_date}}>
 					<div class="col-sm-3 col-sm-offset-4" style="font-size: 1.5em;">
+						<!-- Need to fix task links -->
+						<!-- How do we make a task page that calls relevant data without hardcoding those pages? -->
 						<a href="task">{{task}}</a>
 					</div>
 					<div class="col-sm-3 col-sm-offset-1">Due in <span class="countdown_days"></span> days</div>
 				</div>
+				<!-- Suggestion: Instead of listing the assignments on the homepage, just show how many subtasks needs to be finished -->
 				<div class="row">
 					<ul class="col-sm-4 col-sm-offset-4">
 						{{#each subtasks	}}
