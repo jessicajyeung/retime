@@ -7,6 +7,7 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars');
 
+var add = require('./routes/add.js');
 var index = require('./routes/index');
 var home = require('./routes/home');
 var createNewTask = require('./routes/createNewTask');
@@ -41,6 +42,7 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
+app.get('/add',index.view, home.view, createNewTask.view,task.view,profile.view,settings.view)
 app.get('/', index.view);
 app.get('/home', home.view);
 app.get('/createNewTask', createNewTask.view);
