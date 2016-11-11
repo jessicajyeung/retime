@@ -48,12 +48,9 @@ app.get('/task', task.view);
 app.get('/profile', profile.view);
 app.get('/settings', settings.view);
 app.get('/signup', signup.view);
-<<<<<<< HEAD
 app.get('/submit_new_task', submit_new_task.view);
-
-=======
 app.post('/submit_new_task', submit_new_task.view);
->>>>>>> 8a832baa085ffd28625ae463c1610ddd894ee570
+
 
 // Example route
 // app.get('/users', user.list);
