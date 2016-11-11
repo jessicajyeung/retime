@@ -220,6 +220,9 @@ input:checked + .slider:before {
   margin: 5px;
 }
 
+#Due_in_xx_days {
+  padding-right: 15px;
+}
 /********************* EDITABLE TABLE ***************************/
 @import "compass/css3";
 

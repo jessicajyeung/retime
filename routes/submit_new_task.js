@@ -1,5 +1,5 @@
 // Get all of our user data
-//var data = require('../data.json');
+var data = require('../data.json');
 
 exports.view = function(req, res){
 
@@ -12,20 +12,10 @@ console.log(database);
 
 console.log(req.query);//print the form 
 
-//database.users.push()
-newTask = {'task': req.query.taskname, 'due_date': req.query.calendar};
-database["users"][0]["assignments"].push({'task': req.query.taskname, 'due_date': req.query.calendar});
-//database.push({ 'taskName': task, 'dueDate': due_date});
-console.log({'task': req.query.taskname, 'due_date': req.query.calendar});
 
+database["users"][0]["assignments"].push({'task': req.query.taskname, 'due_date': req.query.due_date, 'subtask': req.query.subtask});
 
-//! 3. save the database
-//i fucking dont know the code
-//how to open a file?
-//how to write into a file
-//open => ../data.json
-//write into that file "database" variable
-
+console.log({'task': req.query.taskname, 'due_date': req.query.calendar, 'subtask': req.query.subtask});
 
 
 	//console.log(data);

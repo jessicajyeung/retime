@@ -48,7 +48,7 @@
         <div class="col-sm-3">
         </div>
         <div class="col-sm-6">
-          <form id="main_create_form" action = "/submit_new_task" method="post">
+          <form id="main_create_form" action = "/submit_new_task" method="get">
             <div class="form-group">
               <label for="taskname">Task Name: </label>
               <input type="text" class="form-control" id="taskname" name="taskname" laceholder="Your task here">
@@ -108,7 +108,7 @@
 
        $('#sub_tasks').html("");
        for (i = 0; i < $("#number_tasks_select").val(); i += 1)
-         $('#sub_tasks').append('<input type="text" class="form-control" id="taskname" placeholder="Your subtask here">');
+         $('#sub_tasks').append('<input type="text" class="form-control" id="taskname" name="subtask" placeholder="Your subtask here">');
      }
 
      $("#number_tasks_select").on("change", display_subtasks);

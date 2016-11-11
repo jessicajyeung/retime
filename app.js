@@ -51,7 +51,7 @@ app.get('/profile', profile.view);
 app.get('/settings', settings.view);
 app.get('/signup', signup.view);
 app.get('/submit_new_task', submit_new_task.view);
-app.post('/submit_new_task', submit_new_task.view);
+app.get('/submit_new_task', submit_new_task.view);
 
 
 // Example route
