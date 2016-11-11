@@ -47,6 +47,7 @@ app.get('/task', task.view);
 app.get('/profile', profile.view);
 app.get('/settings', settings.view);
 app.get('/signup', signup.view);
+app.post('/submit_new_task', submit_new_task.view);
 
 // Example route
 // app.get('/users', user.list);
