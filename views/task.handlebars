@@ -18,7 +18,7 @@
 			<h1><center>Re:Time</center></h1>
 			<button class="hamburger">&#9776;</button>
 			<button class="cross">&#735;</button>
-			<a href="profile" class="user">
+			<a href="profile " class="user">
 				<img src="img/profile_icon.png" id="user" alt="Username's Profile" width="35px" height="35px" >
 			</a>
 		</header>
@@ -90,34 +90,44 @@
 							<td>
 								<span style="color: red" class="mark_as_done glyphicon glyphicon-ok"></span>
 							</td>						</tr>
-						<!-- This is our clonable table line -->
-						<tr class="hide task">
-							<td contenteditable="true">Untitled</td>
-							<td contenteditable="true">undefined</td>
-							<td>
-								<span class="table-remove glyphicon glyphicon-remove"></span>
-							</td>
-							<td>
-								<span class="table-up glyphicon glyphicon-arrow-up"></span>
-								<span class="table-down glyphicon glyphicon-arrow-down"></span>
-							</td>
-							<td>
-								<span style="color: red" class="mark_as_done glyphicon glyphicon-ok"></span>
-							</td>
-						</tr>
-					</table>
-				</div>
+							<!-- This is our clonable table line -->
+							<tr class="hide task">
+								<td contenteditable="true">Untitled</td>
+								<td contenteditable="true">undefined</td>
+								<td>
+									<span class="table-remove glyphicon glyphicon-remove"></span>
+								</td>
+								<td>
+									<span class="table-up glyphicon glyphicon-arrow-up"></span>
+									<span class="table-down glyphicon glyphicon-arrow-down"></span>
+								</td>
+								<td>
+									<span style="color: red" class="mark_as_done glyphicon glyphicon-ok"></span>
+								</td>
+							</tr>
+						</table>
+					</div>
 
-				<button id="export-btn" class="btn btn-primary">Export Data</button>
-				<p id="export"></p>
+					<button id="export-btn" class="btn btn-primary">Export Data</button>
+					<p id="export"></p>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-<script src="https://code.jquery.com/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/introHCI.js"></script>
-<script src="js/main.js"></script>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/introHCI.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-87468216-1', 'auto');
+	ga('send', 'pageview');
+
+	</script>
 </body>
 </html>
