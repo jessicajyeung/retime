@@ -5,18 +5,20 @@ exports.view = function(req, res){
 
 //! 1. open ../data.json
 var database = require('../data.json');
-console.log(database);
+
 
 
 //! 2. add the new task to the database
 
+
+var subtasks=[];
+for (i=0;i<req.query.subtask.length;i+=1)
+subtasks.push({'smalltask':req.query.subtask[i]});
+
+database["users"][0]["assignments"].push({'task': req.query.taskname, 'due_date': req.query.due_date, 
+	'subtasks': subtasks});
+
 console.log(req.query);//print the form 
-
-
-database["users"][0]["assignments"].push({'task': req.query.taskname, 'due_date': req.query.due_date, 'subtask': req.query.subtask});
-
-console.log({'task': req.query.taskname, 'due_date': req.query.calendar, 'subtask': req.query.subtask});
-
 
 	//console.log(data);
 	res.render('submit_new_task', database);

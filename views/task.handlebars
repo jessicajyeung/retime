@@ -72,14 +72,28 @@
 					<table class="table">
 						<tr>
 							<th>Name</th>
-							<th>Value</th>
 							<th></th>
 							<th></th>
 							<th></th>
 						</tr>
 						<tr class="task">
-							<td contenteditable="true">Stir Fry</td>
-							<td contenteditable="true">stir-fry</td>
+							<td contenteditable="true">
+								{{#with users.[0]}}
+								{{#with assignments.[0]}}				
+								<div class="row">
+									<ul class="col-sm-4 col-sm-offset-4">
+										{{#each subtasks}}
+										<li style="margin-left: 20px;">{{smalltask}}</li>
+										{{/each}}
+									</ul>
+								</div>
+								{{/with}}
+								{{/with}}
+
+
+
+						   </td>
+							
 							<td>
 								<span class="table-remove glyphicon glyphicon-remove"></span>
 							</td>
