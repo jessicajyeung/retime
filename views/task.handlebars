@@ -48,8 +48,9 @@
 					<div class="shadow"></div>
 				</div>
 			</div>
+			
 			<!-- how to update wedpags with new data -->
-			<!-- how to use one task page to rep assignments when called --> 
+			<!-- how to use one task page to rep assignments when called -->
 			<div class="micro">
 				<div id="table" class="table-editable">
 					<span class="table-add glyphicon glyphicon-plus"></span>
@@ -59,53 +60,44 @@
 							<th></th>
 							<th></th>
 							<th></th>
+							<th></th>
 						</tr>
+
+						{{#each subtasks}}
 						<tr class="task">
 							<td contenteditable="true">
-								{{#with users.[0]}}
-								{{#with assignments.[0]}}				
-								<div class="row">
-									<ul class="col-sm-4 col-sm-offset-4">
-										{{#each subtasks}}
-										<li style="margin-left: 20px;">{{smalltask}}</li>
-										{{/each}}
-									</ul>
-								</div>
-								{{/with}}
-								{{/with}}
-
+								<div class="row">{{smalltask}}</div>
 						    </td>
-							
-							<td>
-								<span class="table-remove glyphicon glyphicon-remove"></span>
-							</td>
-
+						    <td> </td>
 							<td>
 								<span class="table-up glyphicon glyphicon-arrow-up"></span>
 								<span class="table-down glyphicon glyphicon-arrow-down"></span>
 							</td>
+							<td> </td>
 
 							<td>
-								<span style="color: red" class="mark_as_done glyphicon glyphicon-ok"></span>
-							</td>						</tr>
+								<span class="mark_as_done glyphicon glyphicon-ok"></span>
+								<span class="table-remove glyphicon glyphicon-remove"></span>
+							</td>
+						</tr>
+						{{/each}}
+
 							<!-- This is our clonable table line -->
 							<tr class="hide task">
-								<td contenteditable="true">Untitled</td>
-								<td contenteditable="true">undefined</td>
-								<td>
-									<span class="table-remove glyphicon glyphicon-remove"></span>
-								</td>
+								<td  class="Untitled" contenteditable="true">New subtext</td>
+								<td> </td>
 								<td>
 									<span class="table-up glyphicon glyphicon-arrow-up"></span>
 									<span class="table-down glyphicon glyphicon-arrow-down"></span>
 								</td>
+								<td> </td>
 								<td>
-									<span style="color: red" class="mark_as_done glyphicon glyphicon-ok"></span>
+									<span  class="mark_as_done glyphicon glyphicon-ok"></span>
+									<span class="table-remove glyphicon glyphicon-remove"></span>
 								</td>
 							</tr>
 						</table>
 					</div>
-
 					<button id="export-btn" class="btn btn-primary">Export Data</button>
 					<p id="export"></p>
 				</div>
