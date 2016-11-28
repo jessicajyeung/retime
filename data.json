@@ -5,7 +5,7 @@
 			"assignments": [
 				{
 					"task": "Cooking",
-					"due_date": "2016-12-6",
+					"due_date": "2016-12-06",
 					"subtasks": [
 						{"smalltask": "Omelette"}, 
 						{"smalltask": "du fromage"},
