@@ -9,8 +9,6 @@ var database = require('../data.json');
 
 
 //! 2. add the new task to the database
-
-
 var subtasks=[];
 for (i=0;i<req.query.subtask.length;i+=1)
 subtasks.push({'smalltask':req.query.subtask[i]});
@@ -18,7 +16,7 @@ subtasks.push({'smalltask':req.query.subtask[i]});
 database["users"][0]["assignments"].push({'task': req.query.taskname, 'due_date': req.query.due_date, 
 	'subtasks': subtasks});
 
-console.log(req.query);//print the form 
+//console.log(req.query);//print the form 
 
 	//console.log(data);
 	res.render('submit_new_task', database);

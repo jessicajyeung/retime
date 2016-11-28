@@ -4,8 +4,8 @@
 			"name": "Dexter",
 			"assignments": [
 				{
-					"task": "C'est la vie",
-					"due_date": "2016-11-15",
+					"task": "Cooking",
+					"due_date": "2016-12-6",
 					"subtasks": [
 						{"smalltask": "Omelette"}, 
 						{"smalltask": "du fromage"},
