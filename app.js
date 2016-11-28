@@ -45,6 +45,7 @@ if ('development' == app.get('env')) {
 app.get('/add',index.view, home.view, createNewTask.view,
 				task.view, profile.view, settings.view)
 app.get('/', index.view);
+app.get('/home2', home.view2);
 app.get('/home', home.view);
 // app.get('/grid', home.viewGrid);
 app.get('/createNewTask', createNewTask.view);
