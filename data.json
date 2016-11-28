@@ -13,14 +13,14 @@
 					]
 				},
 				{	"task": "Math Assignment", 
-					"due_date": "2016-11-17",
+					"due_date": "2016-12-17",
 					 "subtasks": [
 						 {"smalltask": "Section1.1"},
 						 {"smalltask": "Section1.3"}
 						 ]
 				},		 
 				{	"task": "Cogs170", 
-					"due_date": "2016-11-18",
+					"due_date": "2016-12-18",
 					"subtasks": [
 						{"smalltask": "Write HTML"}, 
 						{"smalltask": "Link to Json"}
