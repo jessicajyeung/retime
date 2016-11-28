@@ -56,7 +56,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 					<div class="col-sm-3 col-sm-offset-4" style="font-size: 1.5em;">
 						<!-- Need to fix task links -->
 						<!-- How do we make a task page that calls relevant data without hardcoding those pages? -->
-						<a href="task">{{task}}</a>
+						<a href="task?index={{@index}}">{{task}}</a>
 					</div>
 					<div class="col-sm-3 col-sm-offset-1">Due in <span class="countdown_days"></span> days</div>
 				</div>
