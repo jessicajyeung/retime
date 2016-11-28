@@ -42,7 +42,8 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get('/add',index.view, home.view, createNewTask.view,task.view,profile.view,settings.view)
+app.get('/add',index.view, home.view, createNewTask.view,
+				task.view, profile.view, settings.view)
 app.get('/', index.view);
 app.get('/home', home.view);
 // app.get('/grid', home.viewGrid);
@@ -52,7 +53,6 @@ app.get('/profile', profile.view);
 app.get('/settings', settings.view);
 app.get('/signup', signup.view);
 app.get('/submit_new_task', submit_new_task.view);
-app.post('/',home.view);
 
 
 
