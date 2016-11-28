@@ -236,12 +236,13 @@ input:checked + .slider:before {
   }
 }
 
-.table-remove {
+
+.table-remove, .mark_as_done {
   color: #700;
   cursor: pointer;
   
   &:hover {
-    color: #f00;
+    color: red;
   }
 }
 
@@ -264,4 +265,9 @@ input:checked + .slider:before {
   &:hover {
     color: #0b0;
   }
+}
+
+.Untitled {
+  color: #a5a5a5;
+  text-decoration: underline;
 }
