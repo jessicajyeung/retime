@@ -46,7 +46,9 @@ app.get('/add',index.view, home.view, createNewTask.view,
 				task.view, profile.view, settings.view)
 app.get('/', index.view);
 app.get('/home2', home.view2);
+app.post('/home2', home.view2);
 app.get('/home', home.view);
+app.post('/home', home.view);
 // app.get('/grid', home.viewGrid);
 app.get('/createNewTask', createNewTask.view);
 app.get('/task', task.view);
@@ -54,6 +56,7 @@ app.get('/profile', profile.view);
 app.get('/settings', settings.view);
 app.get('/signup', signup.view);
 app.get('/submit_new_task', submit_new_task.view);
+
 
 
 
