@@ -61,8 +61,13 @@
 
 			<div id="new">
 				<center>
+					{{#if grid}}
+					<a href="createNewTask"><img src="img/add_icon.png" width="50" height="50"></a>
+					{{else}}
 					<a href="createNewTask"><img src="img/add_icon.png" width="50" height="50"></a>
 					<p class="center-text">Add a task</p>
+					{{/if}}
+
 				</center>
 			</div>
 		</div>
@@ -77,7 +82,6 @@
 			setInterval(function() {
 				$('.task_info').each(function (i, obj) {
 					task_date = $(this).data('duedate');
-
 					date = Date.parse(task_date);
 					today = new Date();
 					diff = date - today;
@@ -93,10 +97,8 @@
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
 		ga('create', 'UA-87468216-1', 'auto');
 		ga('send', 'pageview');
-
 		</script>
 	</body>
-	</html>
+</html>
